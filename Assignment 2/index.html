@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Job Application</h1>
+        <p>Please complete the form below.</p>
+
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" minlength="2" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" minlength="8" placeholder="At least 8 characters"
+                    required>
+
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" pattern="[0-9+() -]{7,20}" placeholder="+1 555 010 2040"
+                    required>
+
+                <label for="website">Portfolio URL</label>
+                <input id="website" name="website" type="url" placeholder="https://example.com">
+
+                <label for="experience">Years of experience</label>
+                <input id="experience" name="experience" type="number" min="0" max="50" placeholder="0–50">
+            </fieldset>
+
+            <fieldset>
+                <legend>Job Preferences</legend>
+
+                <label for="role">Position</label>
+                <select id="role" name="role" required>
+                    <option value="">Choose a position</option>
+                    <option value="designer">Designer</option>
+                    <option value="developer">Developer</option>
+                    <option value="writer">Writer</option>
+                </select>
+
+                <p>Work type</p>
+                <label class="inline"><input id="full-time" type="radio" name="workType" value="full-time" required>
+                    Full-time</label>
+                <label class="inline"><input id="part-time" type="radio" name="workType" value="part-time">
+                    Part-time</label>
+
+                <p>Interests</p>
+                <label class="inline"><input id="design" type="checkbox" name="interest" value="design"> Design</label>
+                <label class="inline"><input id="coding" type="checkbox" name="interest" value="coding"> Coding</label>
+
+                <label for="skill">Main skill</label>
+                <input id="skill" name="skill" list="skills" placeholder="Choose or type">
+                <datalist id="skills">
+                    <option value="HTML and CSS">
+                    <option value="JavaScript">
+                    <option value="React">
+                </datalist>
+            </fieldset>
+
+            <fieldset>
+                <legend>More Information</legend>
+
+                <label for="start-date">Available from</label>
+                <input id="start-date" name="startDate" type="date" required>
+
+                <label for="contact-time">Best time to call</label>
+                <input id="contact-time" name="contactTime" type="time">
+
+                <label for="resume">Upload resume</label>
+                <input id="resume" name="resume" type="file">
+
+                <label for="confidence">Interest level</label>
+                <input id="confidence" name="confidence" type="range" min="1" max="10">
+
+                <label for="color">Favorite color</label>
+                <input id="color" name="color" type="color">
+
+                <label for="message">Short message</label>
+                <textarea id="message" name="message" rows="3" placeholder="Write a few lines..."></textarea>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
+        </form>
+    </main>
+</body>
+
+</html>

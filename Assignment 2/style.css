@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    background: #f2f4f1;
+    color: #24342b;
+    font: 16px Arial, sans-serif;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    padding: 28px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #24342b18;
+}
+
+h1 {
+    margin: 0 0 8px;
+    color: #315b47;
+}
+
+p {
+    color: #68756d;
+}
+
+fieldset {
+    margin: 20px 0;
+    padding: 18px;
+    border: 1px solid #d5ddd6;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 8px;
+    color: #315b47;
+    font-weight: bold;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="color"]),
+select,
+textarea {
+    display: block;
+    width: 100%;
+    margin: 6px 0 14px;
+    padding: 10px;
+    border: 1px solid #cbd5cd;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #315b47;
+}
+
+input[type="range"] {
+    display: block;
+    margin: 8px 0 16px;
+    accent-color: #315b47;
+}
+
+label {
+    font-weight: bold;
+}
+
+label.inline {
+    display: inline-block;
+    margin: 5px 12px 12px 0;
+    font-weight: normal;
+}
+
+button {
+    padding: 11px 20px;
+    border: 0;
+    border-radius: 5px;
+    background: #315b47;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button.reset {
+    margin-left: 8px;
+    background: #e5eae5;
+    color: #24342b;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px 16px;
+    }
+}
