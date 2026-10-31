@@ -1,0 +1,14 @@
+body { font: 16px Arial; line-height: 1.6; max-width: 800px; margin: 30px auto; padding: 0 16px; background: #f3f7f4; color: #20332d; }
+header, section { background: white; padding: 20px; margin-bottom: 16px; border-radius: 8px; }
+h1, h2, a { color: #176b59; }
+nav a { margin-right: 10px; }
+img { width: 100px; }
+footer { text-align: center; }
+#about image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
