@@ -1,0 +1,43 @@
+:root {
+    --green: #245c45;
+    --light: #e8f3ec;
+    --space: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+caption {
+    padding: var(--space);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid var(--green);
+    padding: var(--space);
+    text-align: center;
+}
+
+thead,
+tfoot {
+    background: var(--green);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: var(--light);
+}
+
+tbody tr:hover {
+    background: #ffe7a8;
+}
