@@ -1,0 +1,68 @@
+:root {
+    --dark: #263238;
+    --green: #39796b;
+    --cream: #f7f5ef;
+    --coral: #d9795e;
+    --heading: "Playfair Display", Georgia, serif;
+    --body: "DM Sans", Arial, sans-serif;
+}
+
+body {
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+    background: var(--cream);
+    color: var(--dark);
+    font-family: var(--body);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1,
+h2 {
+    font-family: var(--heading);
+}
+
+nav a {
+    margin-right: 0.5rem;
+    color: var(--green);
+    text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+    color: var(--coral);
+}
+
+section {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+}
+
+#project {
+    border-left: 4px solid var(--green);
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: var(--green);
+}
+
+@media (max-width: 500px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
