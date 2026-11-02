@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox Examples</title>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        nav,
+        .links,
+        .products {
+            display: flex;
+            gap: 12px;
+            padding: 12px;
+        }
+
+        nav {
+            justify-content: space-between;
+            background: #eee;
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 200px;
+            margin: 30px auto;
+        }
+
+        .products {
+            flex-wrap: wrap;
+        }
+
+        .products article {
+            flex-grow: 1;
+            padding: 15px;
+            background: #eee;
+        }
+
+        .hero {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #e8eee1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Menu</h2>
+    <nav><a href="#">Home</a><a href="#">About</a><a href="#">Contact</a></nav>
+
+    <h2>Login</h2>
+    <form class="login">
+        <input placeholder="Email">
+        <input placeholder="Password">
+        <button>Sign in</button>
+    </form>
+
+    <h2>Products</h2>
+    <section class="products">
+        <article>Book</article>
+        <article>Bag</article>
+        <article>Pen</article>
+        <article>Bottle</article>
+        <article>Clock</article>
+        <article>Hat</article>
+        <article>Mouse</article>
+        <article>Lamp</article>
+    </section>
+
+    <h2>Hero</h2>
+    <section class="hero">
+        <h1>Welcome!</h1>
+        <p>My simple website</p>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+nav,
+.products {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+}
+
+nav {
+    justify-content: space-between;
+    background: #eee;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 200px;
+    margin: 30px auto;
+}
+
+.products {
+    flex-wrap: wrap;
+}
+
+.products article {
+    flex-grow: 1;
+    padding: 15px;
+    background: #eee;
+}
+
+.hero {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e8eee1;
+}
